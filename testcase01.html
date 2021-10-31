@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="testcase1.css">
+
+</head>
+<body>
+<canvas id="canvasOne" width="1500" height="650"></canvas>
+
+
+<script>
+
+    window.onload = function (){
+        let canvas = document.getElementById('canvasOne');
+        let ctx = canvas.getContext ('2d');
+        let phanquan = new Image();
+        phanquan.src ="images/sanji1.png"
+        ctx.beginPath()
+        ctx.drawImage(phanquan,0,0,200,200)
+
+    }
+
+</script>
+
+<!--<img id="phanquan" src="phanquan.jpg" height="200" width="220"/>-->
+
+<!--<img id="sanji" src="sanji1.jpg" height="720" width="1280"/>-->
+<script src="nhanvatchinh.js"></script>
+<script src="nhanvatphu.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
